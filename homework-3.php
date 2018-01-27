@@ -39,8 +39,7 @@ $fauna = [
 ];
 
 //basic task
-//$new_animals = new_animals($fauna);
-//print_r($new_animals);
+$new_animals = new_animals($fauna);
 
 //additional task
 print_animal($fauna);
@@ -59,14 +58,14 @@ function new_animals($fauna){
     
     $first_word = array_column($animals, 0);
     $second_word = array_column($animals, 1);
-    shuffle($first_word);
     shuffle($second_word);
 
-    echo "New animals: \n";
+    echo "<h3>New animals: </h3>";
 
     for ($i = 0; $i < count($animals); $i++) {
         $a = $i + 1;
-        $new_animals[$i] = "{$a}. {$first_word[$i]} {$second_word[$i]} \n";
+        $new_animals[$i] = "<p style='padding: 0; margin: 0'>{$a}. {$first_word[$i]} {$second_word[$i]} </p>";
+        echo $new_animals[$i];
     };
 
     return $new_animals;
