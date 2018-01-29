@@ -90,3 +90,4 @@ function print_animal($fauna){
         echo (implode (", ", $animal)) . ".";
     }
 }
+?>
