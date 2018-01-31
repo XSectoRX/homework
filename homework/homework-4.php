@@ -1,6 +1,6 @@
 <?php
 $content = 0;
-//$content = file_get_contents('http://api.openweathermap.org/data/2.5/weather?q=Moscow,ru&type=like&units=metric&APPID=af7d58abeda3d58b74a7f784bd978671');
+$content = file_get_contents('http://api.openweathermap.org/data/2.5/weather?q=Moscow,ru&type=like&units=metric&APPID=af7d58abeda3d58b74a7f784bd978671');
 
 if ($content !== 0){
     $result = json_decode($content, true);
