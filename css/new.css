@@ -1,0 +1,39 @@
+
+.weather-widget__temperature{
+    margin: 0;
+}
+.weather-widget {
+    min-width: 250px;
+    font: 400 14px/1.4 Roboto,Arial,sans-serif;
+}
+
+.weather-widget__city-name {
+    font: 600 24px/1.4 Oswald,Arial,sans-serif;
+}
+
+.weather-widget__temperature {
+    font: 600 30px/1.4 Oswald,Arial,sans-serif;
+}
+
+.weather-widget__item td {
+    padding: 5px;
+    border: 1px solid darkolivegreen;
+}
+
+.weather-widget__items {
+    font: 400 14px/1.4 Roboto,Arial,sans-serif;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.weather-widget__img {
+    font-size: 17px;
+}
+
+table {
+    max-width: 100%;
+    background-color: yellowgreen;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+}
