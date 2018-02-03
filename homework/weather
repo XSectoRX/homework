@@ -1,1 +1,1 @@
-a:10:{s:4:"date";s:19:"31-01-2018 11:01:29";s:4:"city";s:6:"Moscow";s:7:"weather";s:4:"Snow";s:4:"icon";s:39:"http://openweathermap.org/img/w/13d.png";s:4:"temp";s:8:"-3&deg;C";s:8:"pressure";s:8:"1000 hPa";s:8:"humidity";s:3:"86%";s:10:"visibility";s:10:"2500 meter";s:10:"wind_speed";s:11:"8 meter/sec";s:6:"clouds";s:3:"75%";}
+{"date":"03-02-2018 13:42:16","city":"Moscow","weather":"Snow","icon":"http:\/\/openweathermap.org\/img\/w\/13d.png","temp":"0.5&deg;C","pressure":"1006 hPa","humidity":"100%","visibility":"2400 meter","wind_speed":"3 meter\/sec","clouds":"90%"}
