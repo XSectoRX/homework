@@ -1,7 +1,7 @@
 <?php
-
+$file_way = __DIR__ . '/weather';
 $date = date("d-m-Y H:i:s");
-$date_file = date("d-m-Y H:i:s", filemtime(__DIR__ . '/weather') + 3600);
+$date_file = date("d-m-Y H:i:s", filemtime($file_way) + 3600);
 //echo $date . " > " . $date_file;
 $city = "Moscow";
 $region = "ru";
@@ -9,7 +9,8 @@ $metod = "metric";
 $api_key = "af7d58abeda3d58b74a7f784bd978671";
 $api_link = "http://api.openweathermap.org/data/2.5/weather?q={$city},{$region}&type=like&units={$metod}&APPID={$api_key}";
 
-if ($date > $date_file){
+
+if (!file_exists($file_way) || $date > $date_file){
     $content = file_get_contents("$api_link");
     $result = json_decode($content, true);
     $weather = array(
@@ -25,12 +26,12 @@ if ($date > $date_file){
         "clouds" => $result['clouds']['all'] . "%",
 
     );
-    file_put_contents(__DIR__ . '/weather', json_encode($weather));
-    //echo "<h2> ЗАПРОС К СЕРВЕРУ </h2>";
+    file_put_contents($file_way, json_encode($weather));
+//    echo "<h2> ЗАПРОС К СЕРВЕРУ </h2>";
 }else{
-    $content = file_get_contents(__DIR__ . '/weather');
+    $content = file_get_contents($file_way);
     $weather = json_decode($content, true);
-    //echo "<h2> ЗАПРОС К ФАЙЛУ </h2>";
+//    echo "<h2> ЗАПРОС К ФАЙЛУ </h2>";
 }
 
 ?>
