@@ -1,7 +1,7 @@
 <?php
 
 $date = date("d-m-Y H:i:s");
-$date_file = date("d-m-Y H:i:s", filemtime(__DIR__ . '/weather') + 30);
+$date_file = date("d-m-Y H:i:s", filemtime(__DIR__ . '/weather') + 3600);
 //echo $date . " > " . $date_file;
 $city = "Moscow";
 $region = "ru";
