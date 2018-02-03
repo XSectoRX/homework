@@ -1,0 +1,56 @@
+[{
+  "firstname": "Олег",
+  "lastname": "Миронов",
+  "middlename": "Максимович",
+  "address": {
+    "streetaddress": "ул. Кибальцичиа",
+    "city": "Москва",
+    "postalcode": 100254
+  },
+  "phonenumbers": [
+    "89164566556",
+    "89564566889"
+  ]
+},
+{
+"firstname": "Кирилл",
+"lastname": "Ларионов",
+"middlename": "Николаевич",
+"address": {
+"streetaddress": "ул. Академика Янгеля",
+"city": "Москва",
+"postalcode": 102354
+},
+"phonenumbers": [
+"89164566500",
+"89564500889"
+]
+},
+{
+"firstname": "Виктория",
+"lastname": "Симонова",
+"middlename": "Артёмовна",
+"address": {
+"streetaddress": "проспект Мира",
+"city": "Москва",
+"postalcode": 104454
+},
+"phonenumbers": [
+"89164544456",
+"89564566444"
+]
+},
+{
+"firstname": "Тапатун",
+"lastname": "Тапатунов",
+"middlename": "Сергеевич",
+"address": {
+"streetaddress": "ул. Крузенбобеля",
+"city": "Москва",
+"postalcode": 100277
+},
+"phonenumbers": [
+"89164567777",
+"89564568888"
+]
+}]

@@ -37,3 +37,16 @@ table {
     border-spacing: 0;
 
 }
+
+.tr-h {
+    font: 400 14px/1.4 Roboto,Arial,sans-serif;
+    border: 1px solid #ddd;
+    width: 100%;
+    text-align: center;
+}
+
+.tr-h td {
+    padding: 5px;
+    border: 1px solid darkolivegreen;
+    padding: 1px 4px;
+}

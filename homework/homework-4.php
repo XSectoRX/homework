@@ -1,7 +1,7 @@
 <?php
 
 $date = date("d-m-Y H:i:s");
-$date_file = date("d-m-Y H:i:s", filemtime("weather") + 3600);
+$date_file = date("d-m-Y H:i:s", filemtime(__DIR__ . '/weather') + 30);
 //echo $date . " > " . $date_file;
 
 $content = file_get_contents('http://api.openweathermap.org/data/2.5/weather?q=Moscow,ru&type=like&units=metric&APPID=af7d58abeda3d58b74a7f784bd978671');
@@ -21,10 +21,10 @@ if (!empty($content) && ($date > $date_file)){
         "clouds" => $result['clouds']['all'] . "%",
 
     );
-    file_put_contents("weather", json_encode($weather));
+    file_put_contents(__DIR__ . '/weather', json_encode($weather));
     //echo "<h2> ЗАПРОС К СЕРВЕРУ </h2>";
 }else{
-    $content = file_get_contents("weather");
+    $content = file_get_contents(__DIR__ . '/weather');
     $weather = json_decode($content, true);
     //echo "<h2> ЗАПРОС К ФАЙЛУ </h2>";
 }
