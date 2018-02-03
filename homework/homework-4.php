@@ -3,10 +3,14 @@
 $date = date("d-m-Y H:i:s");
 $date_file = date("d-m-Y H:i:s", filemtime(__DIR__ . '/weather') + 30);
 //echo $date . " > " . $date_file;
+$city = "Moscow";
+$region = "ru";
+$metod = "metric";
+$api_key = "af7d58abeda3d58b74a7f784bd978671";
+$api_link = "http://api.openweathermap.org/data/2.5/weather?q={$city},{$region}&type=like&units={$metod}&APPID={$api_key}";
 
-$content = file_get_contents('http://api.openweathermap.org/data/2.5/weather?q=Moscow,ru&type=like&units=metric&APPID=af7d58abeda3d58b74a7f784bd978671');
-
-if (!empty($content) && ($date > $date_file)){
+if ($date > $date_file){
+    $content = file_get_contents("$api_link");
     $result = json_decode($content, true);
     $weather = array(
         "date" => $date,
