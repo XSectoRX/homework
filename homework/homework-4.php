@@ -1,7 +1,8 @@
 <?php
+date_default_timezone_set('Europe/Moscow');
 $file_way = __DIR__ . '/weather';
 $date = date("d-m-Y H:i:s");
-$date_file = date("d-m-Y H:i:s", filemtime($file_way) + 3600);
+$date_file = 0;
 //echo $date . " > " . $date_file;
 $city = "Moscow";
 $region = "ru";
@@ -9,8 +10,10 @@ $metod = "metric";
 $api_key = "af7d58abeda3d58b74a7f784bd978671";
 $api_link = "http://api.openweathermap.org/data/2.5/weather?q={$city},{$region}&type=like&units={$metod}&APPID={$api_key}";
 
-
-if (!file_exists($file_way) || $date > $date_file){
+if (file_exists($file_way)){
+  $date_file = date("d-m-Y H:i:s", filemtime($file_way) + 3600);
+}
+if(!file_exists($file_way) || $date > $date_file){
     $content = file_get_contents("$api_link");
     $result = json_decode($content, true);
     $weather = array(
