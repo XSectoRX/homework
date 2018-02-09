@@ -1,0 +1,38 @@
+[
+  {
+    "question": "Сколько дней в Январе?",
+    "answer1": 30,
+    "answer2": 31,
+    "answer3": 29,
+    "answer4": 32,
+    "answer5": 38,
+    "true": 31
+  },
+  {
+    "question": "Cколько байт в мегабайте?",
+    "answer1": 0.00098,
+    "answer2": 8388608,
+    "answer3": 1048576,
+    "answer4": 8192,
+    "answer5": 8,
+    "true": 1048576
+  },
+  {
+    "question": "В каком году открыли америку?",
+    "answer1": 1751,
+    "answer2": 1492,
+    "answer3": 1329,
+    "answer4": 1657,
+    "answer5": 1696,
+    "true": 1492
+  },
+  {
+    "question": "Cколько длится учебный год?",
+    "answer1": 175,
+    "answer2": 176,
+    "answer3": 162,
+    "answer4": 135,
+    "answer5": 129,
+    "true": 175
+  }
+]

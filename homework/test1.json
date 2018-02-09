@@ -1,0 +1,42 @@
+[
+  { 
+    "name": "q1",
+    "question": "Назовите столицу Болгарии?",
+    "answer1": "Лапландия",
+    "answer2": "Прага",
+    "answer3": "София",
+    "answer4": "Будапешт",
+    "answer5": "Лондон",
+    "true": "София"
+  },
+  {
+    "name": "q2",
+    "question": "Сколько материков на земном шаре?",
+    "answer1": 5,
+    "answer2": 8,
+    "answer3": 16,
+    "answer4": 6,
+    "answer5": 3,
+    "true": 6
+  },
+  {
+    "name": "q3",
+    "question": "В каком году было крещение руси?",
+    "answer1": 888,
+    "answer2": 908,
+    "answer3": 988,
+    "answer4": 776,
+    "answer5": 696,
+    "true": 998
+  },
+  {
+    "name": "q4",
+    "question": "Cколько лет длится век?",
+    "answer1": 1000,
+    "answer2": 50,
+    "answer3": 15,
+    "answer4": 100,
+    "answer5": 10,
+    "true": 100
+  }
+]
