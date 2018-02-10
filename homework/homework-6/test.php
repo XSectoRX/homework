@@ -36,7 +36,7 @@ $answer = $_POST;
       <label><input type="radio" name="<?= $dates['name'] ?>" value="<?= $dates['answer5'] ?>" ><?= $dates['answer5'] ?></label>
       <?php if ($answer[$dates['name']] == $dates['true']) { ?>
         <span style="color: green; padding-left: 20px; font-weight: bold">ВЕРНО, ОТВЕТ: <?= $dates['true'] ?></span>
-      <?php }else{ ?>
+      <?php }elseif (!empty($answer[$dates['name']])){ ?>
         <span style="color: red; padding-left: 20px; font-weight: bold">НЕ ВЕРНО</span>
       <?php } ?>
     </fieldset>
