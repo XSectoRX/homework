@@ -1,7 +1,10 @@
 <?php
 $path = __DIR__ . "/test/";
 if(!isset($_GET['name']) || !file_exists($path . $_GET['name'])) {
-  die('Invalid test name');
+  echo('Укажите карректное имя теста.<brdie>');
+  echo "  <a href=\"list.php\" style=\"margin-left: 150px;\">К загруженным тестам!</a>";
+  exit;
+
 }else{
   $test_file_name = $_GET['name'];
 }
